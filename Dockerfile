@@ -1,6 +1,6 @@
 FROM python:3.11
 
-WORKDIR /app
+WORKDIR /order_site
 
 EXPOSE 8000
 
