@@ -45,7 +45,7 @@ services:
       - "3306:3306"
     
     volumes:
-      - storage:/var/lib/mysq
+      - postgres_data:/var/lib/postgresql/data
 
     networks:
       - food-site
@@ -67,8 +67,10 @@ services:
       - food-site
 
 volumes:
+
+  postgres_data:
+
   storage:
-  
     name: "site-data"
   
   pgadmin-data:
